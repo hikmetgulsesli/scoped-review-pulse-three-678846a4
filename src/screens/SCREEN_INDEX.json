@@ -1,0 +1,19 @@
+[
+  {
+    "screenId": "9907fb86d42a493093d474bdb8844d9f",
+    "title": "Status Utility - Scoped Review Pulse Three",
+    "componentName": "StatusUtilityScopedReviewPulseThree",
+    "file": "src/screens/StatusUtilityScopedReviewPulseThree.tsx",
+    "buttons": 1,
+    "inputs": 1,
+    "links": 0,
+    "actions": [
+      {
+        "id": "refresh-status-1",
+        "kind": "button",
+        "label": "Refresh Status",
+        "index": 0
+      }
+    ]
+  }
+]
