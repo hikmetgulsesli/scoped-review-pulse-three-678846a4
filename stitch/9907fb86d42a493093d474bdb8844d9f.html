@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scoped Review Pulse Three - Utility Board</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c6c6cd",
+                      "primary-fixed-dim": "#bec6e0",
+                      "on-surface-variant": "#45464d",
+                      "on-tertiary": "#ffffff",
+                      "on-background": "#0b1c30",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#dce9ff",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#7c839b",
+                      "primary": "#000000",
+                      "secondary-fixed": "#d8e2ff",
+                      "surface-dim": "#cbdbf5",
+                      "tertiary-fixed-dim": "#dec29a",
+                      "on-secondary-container": "#fefcff",
+                      "on-surface": "#0b1c30",
+                      "surface-container-low": "#eff4ff",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-primary": "#ffffff",
+                      "surface": "#f8f9ff",
+                      "surface-container-highest": "#d3e4fe",
+                      "background": "#f8f9ff",
+                      "primary-fixed": "#dae2fd",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#213145",
+                      "surface-tint": "#565e74",
+                      "on-primary-fixed": "#131b2e",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "inverse-primary": "#bec6e0",
+                      "outline": "#76777d",
+                      "on-tertiary-fixed": "#271901",
+                      "tertiary": "#000000",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#2170e4",
+                      "surface-container": "#e5eeff",
+                      "on-secondary-fixed-variant": "#004395",
+                      "surface-bright": "#f8f9ff",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#574425",
+                      "surface-variant": "#d3e4fe",
+                      "tertiary-container": "#271901",
+                      "on-tertiary-container": "#98805d",
+                      "tertiary-fixed": "#fcdeb5",
+                      "secondary": "#0058be",
+                      "on-secondary-fixed": "#001a42",
+                      "secondary-fixed-dim": "#adc6ff",
+                      "primary-container": "#131b2e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "1rem",
+                      "density-tight": "0.25rem",
+                      "container-padding": "1.5rem",
+                      "unit": "4px",
+                      "component-gap-sm": "0.5rem",
+                      "component-gap-md": "1rem"
+              },
+              "fontFamily": {
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "label-xs": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-xs": [
+                              "11px",
+                              {
+                                      "lineHeight": "14px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex items-center justify-center p-gutter">
+<!-- Utility Board Container -->
+<main class="w-full max-w-[600px] bg-surface-container-lowest border border-outline-variant rounded-lg shadow-sm overflow-hidden flex flex-col">
+<!-- Header -->
+<header class="px-gutter py-3 border-b border-outline-variant bg-surface-bright flex justify-between items-center">
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">Scoped Review Pulse Three</h1>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container inline-block animate-pulse"></span>
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Live</span>
+</div>
+</header>
+<!-- Main Content Area -->
+<div class="p-gutter flex flex-col gap-component-gap-md">
+<!-- Status Cards (Bento style grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-unit">
+<!-- System Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-3 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">System</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">memory</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-primary font-medium">Optimal</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">CPU: 12% | RAM: 4.2GB</div>
+</div>
+</div>
+<!-- Data Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-3 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Data Source</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">database</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-primary font-medium">Synced</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Latency: 14ms</div>
+</div>
+</div>
+<!-- Network Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-3 flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Network</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">wifi_tethering</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-primary font-medium">Connected</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">100% Packets received</div>
+</div>
+</div>
+</div>
+<!-- Control Section -->
+<div class="bg-surface border border-outline-variant rounded p-4 flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Data Sync Engine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="last-updated">Last Updated: Just now</span>
+</div>
+<div class="flex items-center gap-4 w-full sm:w-auto">
+<!-- Toggle Switch -->
+<label class="flex items-center cursor-pointer gap-2">
+<div class="relative">
+<input checked="" class="sr-only" id="engine-toggle" type="checkbox"/>
+<div class="block bg-surface-tint w-10 h-6 rounded-full transition-colors duration-200 ease-in-out" id="toggle-bg"></div>
+<div class="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-200 ease-in-out transform translate-x-4" id="toggle-dot"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface" id="toggle-label">Ready</span>
+</label>
+<!-- Refresh Button -->
+<button class="flex-1 sm:flex-none bg-primary text-on-primary font-label-md text-label-md px-3 py-2 rounded flex items-center justify-center gap-2 hover:bg-on-surface-variant transition-colors active:scale-95" id="refresh-btn">
+<span class="material-symbols-outlined text-[16px]" id="refresh-icon">refresh</span>
+                        Refresh Status
+                    </button>
+</div>
+</div>
+<!-- Feedback Area -->
+<div class="mt-2 flex items-center gap-2 bg-surface-container-low border border-outline-variant rounded px-3 py-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">All systems operational. Ready for next cycle.</span>
+</div>
+</div>
+</main>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const refreshBtn = document.getElementById('refresh-btn');
+            const refreshIcon = document.getElementById('refresh-icon');
+            const lastUpdated = document.getElementById('last-updated');
+            const toggleInput = document.getElementById('engine-toggle');
+            const toggleBg = document.getElementById('toggle-bg');
+            const toggleDot = document.getElementById('toggle-dot');
+            const toggleLabel = document.getElementById('toggle-label');
+
+            // Refresh action
+            refreshBtn.addEventListener('click', () => {
+                refreshIcon.classList.add('animate-spin');
+                refreshBtn.disabled = true;
+                
+                setTimeout(() => {
+                    refreshIcon.classList.remove('animate-spin');
+                    refreshBtn.disabled = false;
+                    const now = new Date();
+                    lastUpdated.textContent = `Last Updated: ${now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'})}`;
+                }, 800);
+            });
+
+            // Toggle action
+            toggleInput.addEventListener('change', (e) => {
+                if (e.target.checked) {
+                    toggleBg.classList.replace('bg-outline', 'bg-surface-tint');
+                    toggleDot.classList.replace('translate-x-0', 'translate-x-4');
+                    toggleLabel.textContent = 'Ready';
+                    toggleLabel.classList.replace('text-on-surface-variant', 'text-on-surface');
+                } else {
+                    toggleBg.classList.replace('bg-surface-tint', 'bg-outline');
+                    toggleDot.classList.replace('translate-x-4', 'translate-x-0');
+                    toggleLabel.textContent = 'Paused';
+                    toggleLabel.classList.replace('text-on-surface', 'text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>
